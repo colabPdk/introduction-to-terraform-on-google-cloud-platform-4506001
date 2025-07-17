@@ -1,9 +1,3 @@
-# Define the Google Cloud provider and project/region
-provider "google" {
-  project = "terraform-466204" # Ensure this matches your actual GCP Project ID
-  region  = "us-west1"
-}
-
 # Create a custom VPC Network
 resource "google_compute_network" "app_network" {
   name                    = "app-network" # Renamed to avoid conflict with subnetwork name
