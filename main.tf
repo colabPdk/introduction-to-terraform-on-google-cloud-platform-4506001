@@ -16,6 +16,7 @@ data "google_compute_image" "ubuntu" {
   family      = "ubuntu-2204-lts"
 }
 
+
 resource "google_compute_instance" "web" {
   name         = "web"
   machine_type = "e2-micro"
